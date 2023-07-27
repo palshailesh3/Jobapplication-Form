@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+        accent-color:black;
+    }
+    </style>
+</head>
+<body>
+  <form>
+      <h2>application form</h2>
+      <fieldset>
+       
+       <label for="name">name:</label><br>
+       <input type="text" id="name" placeholder="enter name"> <br><br>
+       <label for="gmail">email id.</label> <br>
+       <input type="text" id="gmail" placeholder="asdgghg@gmail.com"><br><br>
+       <label for="mobile">mobile no:</label><br>
+       <input type="tel" id="mobile" placeholder="+91-enter mobile no." pattern="+91-[0-9]{10}" maxlength="10"> <br><br>
+       <label for="resume">upload resume:</label><br>
+       <input type="file" id="resume" name="resume"><br><br>
+<label for="experience">experience(in years:)</label>
+<input type="number" min="0" max="10" name="exp">
+      </fieldset><br>
+      <fieldset>
+          <legend>preferred language</legend>
+          <label for="html">HTML</label>
+          <input type="checkbox" id="html"><br><br>
+          <label for="css">CSS</label>
+          <input type="checkbox" id="css"><br><br>
+          <label for="java">java</label>
+          <input type="checkbox" id="java"><br><br>
+          
+      </fieldset> <br>
+      <label for="qualification">highest education:</label>
+      <select name="qualification" id="qualification">
+          <option value="b.tech">b.tech</option>
+          <option value="m.tech">m.tech</option>
+          <option value="entermediate">entermediate</option>
+          <option value="illiterate">phd</option>
+      </select>
+      <fieldset>
+          <legend>availabiity</legend>
+          
+        <input type="radio" id="fulltime" name="full">
+         <label for="fulltime">:full-time</label> <br>
+          <input type="radio" id="parttime" name="full">
+          <label for="parttime">:part-time</label>
+      </fieldset><br>
+      <label for="comment">additional comment:</label><br>
+      <textarea name="comment" id="comment" cols="60" rows="10" maxlength="250"></textarea>
+      <br>
+      <button type="submit"><strong>submit application</strong></button>
+  </form>
+</body>
+</html>
